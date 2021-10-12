@@ -52,11 +52,11 @@ Additionally the 32blit SDK has some conveniences:
 [Use this template](https://github.com/32blit/picosystem-boilerplate/generate) to
 generate your own project.
 
-1 Edit the CMakeList.txt file to set the name of your project
-2 Edit the metadata.yml file to set the information for your project
-3 Edit the LICENSE file to set your name on the license
-4 Delete the contents of this README.md and tell us about your game!
-5 Write lots of super cool code!
+1. Edit the CMakeList.txt file to set the name of your project
+2. Edit the metadata.yml file to set the information for your project
+3. Edit the LICENSE file to set your name on the license
+4. Delete the contents of this README.md and tell us about your game!
+5. Write lots of super cool code!
 
 ### Documentation
 
