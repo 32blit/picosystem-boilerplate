@@ -21,14 +21,19 @@ void init() {
 //
 void render(uint32_t time) {
 
-    // clear the screen -- screen is a reference to the frame buffer and can be used to draw all things with the 32blit
-    screen.clear();
-
-    // draw some text at the top of the screen
+    // reset the screen alpha and clipping mask
     screen.alpha = 255;
     screen.mask = nullptr;
+
+    // clear the screen -- screen is a reference to the frame buffer and can be used to draw all things with the 32blit
+    screen.pen = Pen(0, 0, 0);
+    screen.clear();
+
+    // draw a white rectangle
     screen.pen = Pen(255, 255, 255);
     screen.rectangle(Rect(0, 0, 320, 14));
+
+    // draw some black text
     screen.pen = Pen(0, 0, 0);
     screen.text("Hello PicoSystem!", minimal_font, Point(5, 4));
 }
